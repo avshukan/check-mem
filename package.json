@@ -1,0 +1,22 @@
+{
+  "name": "check-mem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --expose-gc src/index.js",
+    "1Gb": "node --expose-gc --max-old-space-size=1000 src/index.js",
+    "4Gb": "node --expose-gc --max-old-space-size=4000 src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avshukan/check-mem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avshukan/check-mem/issues"
+  },
+  "homepage": "https://github.com/avshukan/check-mem#readme"
+}
